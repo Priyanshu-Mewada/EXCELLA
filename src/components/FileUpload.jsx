@@ -1,13 +1,13 @@
 import React from 'react';
 import * as XLSX from 'xlsx';
 
-const FileUpload = ({ setData }) => {  // receive setData from parent
+const FileUpload = ({ setData }) => {  
 
     const handleFile = async (e) => {
         const file = e.target.files[0];
         if (!file) return;
 
-        // Read file
+       
         const buffer = await file.arrayBuffer();
         const workbook = XLSX.read(buffer);
         const sheetName = workbook.SheetNames[0];

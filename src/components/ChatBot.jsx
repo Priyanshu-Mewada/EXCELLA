@@ -20,7 +20,7 @@ const arrayToObject = (data) => {
 
 export default function ChatBot({ data, setResultData }) {
   const [messages, setMessages] = useState([
-    { role: "bot", text: "Hello! Upload a sheet and ask me anything about it." },
+    { role: "bot", text: "Hello! I am Excella, an AI agent for spreadsheets." },
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);

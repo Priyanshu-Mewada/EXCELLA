@@ -4,6 +4,8 @@ const Header = () => {
     return (
         <div className=' items-center justify-center bg-gray-500 p-2 shadow-lg m-2 rounded-lg'>
         <div className='flex flex-col items-center justify-center p-2'> 
+               {/* <img src="./assets/ICON." alt="" /> */}
+               
                <h1 
             className=" text-3xl font-extrabold text-white  justify-center text-center ">
                 EXCELLA
