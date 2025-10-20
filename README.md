@@ -1,17 +1,56 @@
-<<<<<<< HEAD
-# React + Vite
+# Excella
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Excella** is an AI-powered Excel automation tool that transforms spreadsheets into intelligent workflows. Upload your Excel/CSV files, analyze data, and interact with it using an AI chatbot — all in a sleek and responsive interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **File Upload**: Drag & drop or select Excel/CSV files easily.
+- **AI ChatBot**: Ask questions and get insights from your spreadsheet data using AI.
+- **Data Preview**: Quickly view your uploaded spreadsheet in a clean table.
+- **Intelligent Suggestions**: Gemini API provides smart insights based on your data.
+- **Responsive UI**: Works smoothly on desktop and mobile devices.
+- **Modern Design**: Clean interface with dark/light message bubbles.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# EXCELLA
-AI Excel Automation Tool.
->>>>>>> origin/main
+---
+
+## Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS  
+- **Backend / API**: Node.js (for AI integration)  
+- **File Handling**: SheetJS (`xlsx`) for Excel/CSV parsing  
+- **AI Integration**: Gemini API  
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/<your-username>/excella.git
+    cd excella
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3. Start the development server:
+
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+
+
+
+
+
+
