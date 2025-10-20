@@ -15,7 +15,7 @@ export default function DataPreview({ data }) {
     <div className="w-full h-full flex flex-col overflow-auto p-2">
       <button
         onClick={downloadExcel}
-        className="mb-2 px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700 self-start"
+        className="mb-2 px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700 self-start"
       >
         Download Excel
       </button>

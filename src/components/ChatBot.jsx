@@ -87,7 +87,10 @@ export default function ChatBot({ data, setResultData }) {
   };
 
   return (
-    <div className="flex flex-col h-full w-full bg-gray-100 rounded-lg shadow-lg">
+    
+    <div className="flex flex-col h-full w-full bg-gray-100 rounded-lg shadow-lg p-4 overflow-y-auto space-y-3">
+  
+
       {/* Chat messages */}
       <div className="flex-1 overflow-y-auto p-4 space-y-3">
         {messages.map((msg, index) => (
@@ -100,8 +103,8 @@ export default function ChatBot({ data, setResultData }) {
             <div
               className={`px-4 py-2 rounded-2xl max-w-xs shadow ${
                 msg.role === "user"
-                  ? "bg-gray-500 text-white"
-                  : "bg-gray-200 text-gray-900"
+                  ? "bg-gray-900 text-white"
+                  : "bg-white text-gray-900"
               }`}
             >
               {msg.text}
@@ -111,7 +114,7 @@ export default function ChatBot({ data, setResultData }) {
 
         {loading && (
           <div className="flex justify-start">
-            <div className="px-4 py-2 rounded-2xl max-w-xs shadow bg-gray-200 text-gray-600 italic">
+            <div className="px-4 py-2 rounded-2xl max-w-xs shadow bg-white text-gray-600 italic">
               ⚙️ Thinking...
             </div>
           </div>
@@ -132,7 +135,7 @@ export default function ChatBot({ data, setResultData }) {
           onClick={sendMessage}
           disabled={loading}
           className={`ml-2 px-4 py-2 rounded-full text-white ${
-            loading ? "bg-gray-400" : "bg-gray-600 hover:bg-gray-700"
+            loading ? "bg-gray-400" : "bg-gray-900 hover:bg-gray-700"
           }`}
         >
           Send
